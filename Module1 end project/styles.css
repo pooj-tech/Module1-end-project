@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  background-color: #575757;
+  padding: 1em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 1em;
+}
+
+.navbar a:hover {
+  background-color: #ae0a0a;
+  border-radius: 5px;
+}
+
+.content {
+  padding: 2em;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+input, button {
+  padding: 0.5em;
+  width: 100%;
+  font-size: 1em;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #575757;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*.job-button {
+  white-space: nowrap;
+  padding: 0.75em 1.5em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  flex: 0 0 auto;
+  cursor: pointer;
+  font-size: 0.9em;
+} */
+
+.job-button:hover {
+  background-color: #575757;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 2em;
+  border-top: 1px solid #e0e0e0;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  flex-wrap: wrap;
+}
+
+.footer-left h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer-left p {
+  margin: 0.2em 0 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.footer-right a {
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.footer-right img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%);
+  transition: filter 0.2s ease;
+}
+
+.footer-right img:hover {
+  filter: brightness(0.4) saturate(100%);
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 1em;
+  }
+
+  .footer-right a {
+    margin-left: 0;
+  }
+}
+
+.login {
+  border: black;
+  border-radius: 40px;
+}
+
+
